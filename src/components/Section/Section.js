@@ -4,13 +4,17 @@ import styles from './Section.module.css';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Section({headline, scrollTo, goToSectionRef, showArrow, children}) {
-    const headlineRef = useRef();
+// can i change the sensitivity of the scroll? It seems really sensitive.
+
+export default function Section({sectionTitle, scrollTo, goToSectionRef, showArrow, backgroundColor, children}) {
+    const sectionTitleRef = useRef();
     const sectionRef = useRef();
+
+    const fontColor = backgroundColor !== '#FFFFFF' ? '#FFFFFF' : '#000000';
 
     useEffect(() => {
         gsap.fromTo(
-            headlineRef.current,
+            sectionTitleRef.current,
             {
                 autoAlpha: 0,
                 y: -20,
@@ -22,7 +26,7 @@ export default function Section({headline, scrollTo, goToSectionRef, showArrow, 
                 ease: "power3.out",
                 scrollTrigger: {
                     scroller: ".container",
-                    trigger: headlineRef.current,
+                    trigger: sectionTitleRef.current,
                     start: "top 60%",
                     end: "bottom 0%",
                     toggleActions: "play none restart reverse",
@@ -34,13 +38,14 @@ export default function Section({headline, scrollTo, goToSectionRef, showArrow, 
 
     return (
         <div className={styles.section} ref={sectionRef}>
-            <div>
-                <h2 ref={headlineRef}>{headline}</h2>
+            <div className={styles.container} style={{backgroundColor: backgroundColor, fontColor: fontColor}}>
+                <h2 className={styles.sectionTitle} ref={sectionTitleRef}>{sectionTitle}</h2>
+                <div>{children}</div>
             </div>
-            <div>{children}</div>
             {showArrow && (
                 <button
                     onClick={() => scrollTo(goToSectionRef)}
+                    className={styles.downArrow}
                 ></button>
             )}
         </div>

@@ -8,13 +8,20 @@
     position: relative;
 }
 
-.headline {
+.container {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-left: 100px;
+}
+
+.sectionTitle {
     position: relative;
     z-index: 1;
     font-size: 1.4rem;
     font-weight: bold;
-    color: #fff;
-    text-align: center;
+    text-align: left;
     @media (min-width: 768px) {
       font-size: 3rem;
     }
