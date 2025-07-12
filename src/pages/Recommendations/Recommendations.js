@@ -4,15 +4,15 @@ export default function RecommendationContent() {
     return (
         <div className={styles.container}>
             <div>
-                <p>Nicole's</p>
+                <p>Nicole M.</p>
             </div>
             <div>
-                <p>Chris's</p>
+                <p>Chris S.</p>
             </div>
             <div>
-                <p>Rowan's</p>
+                <p>Rowan L.</p>
             </div>
-            {/* Ask Kyle for recc */}
+            {/* Ask Kyle and Gary for recc */}
         </div>
     );
 }
