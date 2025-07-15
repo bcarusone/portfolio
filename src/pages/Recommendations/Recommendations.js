@@ -1,6 +1,6 @@
 import styles from './Recommendations.module.css';
 
-export default function RecommendationContent() {
+export default function RecommendationContent({data}) {
     return (
         <div className={styles.container}>
             <div>

@@ -9,6 +9,8 @@ import WorksContent from './pages/Works/Works.js';
 import ExperienceContent from './pages/Experience/Experience.js';
 import RecommendationContent from './pages/Recommendations/Recommendations.js';
 import ContactContent from './pages/Contact/Contact.js';
+import data from './Data.json';
+
 
 function App() {
     const HomeSection = useRef();
@@ -56,7 +58,9 @@ function App() {
                         showArrow={true}
                         backgroundColor={'#FFFFFF'}
                     >
-                        <SkillsContent />
+                        <SkillsContent 
+                            data={data.skills}
+                        />
                     </Section>
                 </div>
                 <div ref={WorksSection}>
@@ -67,7 +71,9 @@ function App() {
                         showArrow={true}
                         backgroundColor={'#FFFFFF'}
                     >
-                        <WorksContent />
+                        <WorksContent 
+                            data={data.projects}
+                        />
                     </Section>
                 </div>
                 <div ref={ExperienceSection}>
@@ -78,7 +84,12 @@ function App() {
                         showArrow={true}
                         backgroundColor={'#FFFFFF'}
                     >
-                        <ExperienceContent />
+                        <ExperienceContent 
+                            data={{
+                                education: data.education,
+                                employment: data.employment,
+                            }}
+                        />
                     </Section>
                 </div>
                 <div ref={RecommendationSection}>
@@ -89,7 +100,9 @@ function App() {
                         showArrow={true}
                         backgroundColor={'#FFFFFF'}
                     >
-                        <RecommendationContent />
+                        <RecommendationContent 
+                            data={data.recommendations}
+                        />
                     </Section>
                 </div>
                 <div ref={ContactSection}>

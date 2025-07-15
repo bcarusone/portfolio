@@ -4,12 +4,11 @@ import styles from './Section.module.css';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-// can i change the sensitivity of the scroll? It seems really sensitive.
-
 export default function Section({sectionTitle, scrollTo, goToSectionRef, showArrow, backgroundColor, children}) {
     const sectionTitleRef = useRef();
     const sectionRef = useRef();
 
+    // Ensure the font color is different from the background color
     const fontColor = backgroundColor !== '#FFFFFF' ? '#FFFFFF' : '#000000';
 
     useEffect(() => {
@@ -23,7 +22,7 @@ export default function Section({sectionTitle, scrollTo, goToSectionRef, showArr
                 y: 0,
                 autoAlpha: 1,
                 duration: 1,
-                ease: "power3.out",
+                ease: "power1.out",
                 scrollTrigger: {
                     scroller: ".container",
                     trigger: sectionTitleRef.current,

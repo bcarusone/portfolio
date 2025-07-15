@@ -1,25 +1,70 @@
 {
     "skills": {
         "frontend": [
-            "HTML",
-            "CSS",
-            "JavaScript (React)",
-            "TypeScript",
-            "Jinja"
+            {
+                "technology": "HTML",
+                "logo": ""
+            },
+            {
+                "technology": "CSS",
+                "logo": ""
+            },
+            {
+                "technology": "JavaScript (React)",
+                "logo": ""
+            },
+            {
+                "technology": "TypeScript",
+                "logo": ""
+            },
+            {
+                "technology": "Jinja",
+                "logo": ""
+            }
         ],
         "backend": [
-            "Python (Flask)",
-            "C# / .NET",
-            "MySQL",
-            "C++",
-            "REST APIs"
+            {
+                "technology": "Python (Flask)",
+                "logo": ""
+            },
+            {
+                "technology": "C# / .NET",
+                "logo": ""
+            },
+            {
+                "technology": "MySQL",
+                "logo": ""
+            },
+            {
+                "technology": "C++",
+                "logo": ""
+            },
+            {
+                "technology": "REST APIs",
+                "logo": ""
+            }
         ],
         "devTools": [
-            "AWS (S3, Lambda, Parameter Store)",
-            "Docker",
-            "Jenkins",
-            "Sentry",
-            "DataDog"
+            {
+                "technology": "AWS (S3, Lambdas, Parameter Store)",
+                "logo": ""
+            },
+            {
+                "technology": "Docker",
+                "logo": ""
+            },
+            {
+                "technology": "Jenkins",
+                "logo": ""
+            },
+            {
+                "technology": "Sentry",
+                "logo": ""
+            },
+            {
+                "technology": "Datadog",
+                "logo": ""
+            }
         ]
     },
     "projects": [
