@@ -8,7 +8,7 @@ export default function SkillCard({title, skillsList}) {
             <CardContent>
                 <List orientation="vertical">
                     {skillsList.map(skillInfo => (
-                        <ListItem>
+                        <ListItem key={skillInfo.technology}>
                             <ListItemIcon  />
                             <ListItemText>
                                 {skillInfo.technology}

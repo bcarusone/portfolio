@@ -47,7 +47,9 @@ function App() {
                         showArrow={true}
                         backgroundColor={'#FFFFFF'}
                     >
-                        <AboutContent />
+                        <AboutContent 
+                            data={data.about}
+                        />
                     </Section>
                 </div>
                 <div ref={SkillsSection}>

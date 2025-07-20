@@ -10,6 +10,7 @@ export default function SkillsContent({data}) {
         <div className={styles.container}>
             {Object.entries(data).map(([categoryKey, items]) => (
                 <SkillCard
+                    key={categoryKey}
                     title={capitalizeFirstLetter(categoryKey)}
                     skillsList={items}
                 />

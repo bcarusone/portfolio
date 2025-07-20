@@ -1,4 +1,12 @@
 {
+    "about": {
+        "imagUrl": "",
+        "name": "Brittany Carusone",
+        "title": "Full Stack Engineer",
+        "location": "New York, USA",
+        "email": "brcarusone@gmail.com",
+        "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
     "skills": {
         "frontend": [
             {
@@ -32,7 +40,7 @@
                 "logo": ""
             },
             {
-                "technology": "MySQL",
+                "technology": "SQL",
                 "logo": ""
             },
             {
@@ -129,17 +137,25 @@
             "linkTile": ""
         }
     ],
-    "employment": [{
-            "employer": "SRC, Inc",
-            "startDate": "Jan 2020",
-            "endDate": "Jan 2022",
-            "location": "Remote",
+    "employment": [
+        {
+            "employer": "Raymour & Flanigan",
+            "startDate": "Mar 2024",
+            "endDate": "Present",
+            "location": "Hybrid",
+            "title": ".NET Developer", 
             "description": [
-                "Architected performance monitoring and fault localization for embedded systems in an agile environment.",
-                "Pioneered the development of a private NPM repository for reusable UI components, reducing duplication and enhancing tool integration.",
-                "Modified Jenkins build pipelines to implement configuration changes and ensure proper artifact storage, while assisting in the creation of Docker images for the system under test, streamlining the CI/CD process.",
-                "Mentored engineers in writing clean code and resolving complex issues in a multi-system environment.",
-                "Played a key role in a distributed team, effectively managing conflicting priorities and tight deadlines."
+                "Implemented an Azure Function to streamline file transfers between S3 buckets for email marketing campaigns.",
+                "Converted a legacy FedEx SOAP API interaction to REST, ensuring continued functionality.",
+                "Designed workflow process for development while maintaining the applications integrity during end to end testing.",
+                "Redesigning an in-house application to integrate with NetSuite, improving data synchronization, streamlining business processes, and enhancing overall system functionality."
+            ],
+            "skills": [
+                "C# / .NET",
+                "Python",
+                "REST APIs",
+                "SQL",
+                "AWS S3"
             ]
         },
         {
@@ -147,51 +163,85 @@
             "startDate": "Feb 2022",
             "endDate": "Oct 2023",
             "location": "Remote",
+            "title": "Full Stack Engineer", 
             "description": [
                 "Designed and implemented a PDF generation tool, eliminating the need for outsourcing and saving nearly $900 per month.",
                 "Developed a 'Go Paperless' feature, achieving a 74% adoption rate and saving $16,000 per month within six weeks of deployment.",
                 "Developed and deployed a scalable serverless web application using AWS services, including Lambda, S3, and Parameter Store, reducing infrastructure management and improving application performance.",
                 "Created custom marketing materials with embedded QR codes to enhance customer engagement and streamline the quote flow.",
                 "Utilized Sentry and DataDog for proactive error identification and resolution."
+            ],
+            "skills": [
+                "Python (Flask)",
+                "JavaScript (React)",
+                "MySQL",
+                "Jinja",
+                "HTML",
+                "CSS",
+                "REST APIs",
+                "AWS (S3, Lambdas, Parameter Store)",
+                "Sentry",
+                "DataDog"
             ]
         },
         {
-            "employer": "Raymour & Flanigan",
-            "startDate": "Mar 2024",
-            "endDate": "Present",
-            "location": "Hybrid",
+            "employer": "SRC, Inc",
+            "startDate": "Jan 2020",
+            "endDate": "Jan 2022",
+            "location": "Remote",
+            "title": "Software Engineer", 
             "description": [
-                "Implemented an Azure Function to streamline file transfers between S3 buckets for email marketing campaigns.",
-                "Converted a legacy FedEx SOAP API interaction to REST, ensuring continued functionality.",
-                "Designed workflow process for development while maintaining the applications integrity during end to end testing.",
-                "Redesigning an in-house application to integrate with NetSuite, improving data synchronization, streamlining business processes, and enhancing overall system functionality."
+                "Architected performance monitoring and fault localization for embedded systems in an agile environment.",
+                "Pioneered the development of a private NPM repository for reusable UI components, reducing duplication and enhancing tool integration.",
+                "Modified Jenkins build pipelines to implement configuration changes and ensure proper artifact storage, while assisting in the creation of Docker images for the system under test, streamlining the CI/CD process.",
+                "Mentored engineers in writing clean code and resolving complex issues in a multi-system environment.",
+                "Played a key role in a distributed team, effectively managing conflicting priorities and tight deadlines."
+            ],
+            "skills": [
+                "C++",
+                "Python (Flask)",
+                "JavaScript (React)",
+                "REST APIs",
+                "Docker",
+                "Jenkins"
             ]
         }
     ],
     "education": {
-        "school": "Middle Georgia State University",
-        "degree": "Information Technology, BS",
-        "location": "Remote",
-        "gpa": "3.92"
+            "schoolName": "Middle Georgia State University",
+            "degree": "Information Technology, BS",
+            "location": "Remote",
+            "startDate": "Aug 2015",
+            "endDate": "Dec 2019",
+            "gpa": "3.92",
+            "skills": [
+                "Python",
+                "C++",
+                "JavaScript",
+                "MySQL",
+                "REST APIs",
+                "HTML",
+                "CSS"
+            ]
     },
     "recommendations": [
         {
             "firstName": "Nicole",
-            "lastInitial": "M.",
+            "lastInitial": "M",
             "currentEmployer": "Pumpkin Pet Insurance",
             "title": "Technical Lead",
             "message": "Brittany is one of the best engineers I have worked with. I directly worked with her at both SRC and Pumpkin Pet Insurance. Each time, she has shown incredible ambition and strives to improve the lives of those around her. She is always looking for new ways to improve her technical skills, making her versatile and picking up on new concepts fast. Throughout my time working with her, she has never been afraid to dive into a different aspect of the Software Engineering field."
         },
         {
             "firstName": "Chris",
-            "lastInitial": "S.",
+            "lastInitial": "S",
             "currentEmployer": "1Password",
             "title": "Sr Software Engineering Manager",
             "message": "Brittany is an incredible leader and a skilled individual contributor on the team I worked on. As a leader, she helped challenge the status quo and always has a bias for action and inspiring people to get things done. As an individual contributor, she was quick to learn new languages and help solve ambiguous and technically complex challenges."
         },
         {
             "firstName": "Rowan",
-            "lastInitial": "L.",
+            "lastInitial": "L",
             "currentEmployer": "Pumpkin Pet Insurance",
             "title": "Backend Engineer",
             "message": "I had the pleasure of working with Brittany for one year at Pumpkin Pet Insurance, during which time I watched her play an important role in addressing many of the technical challenges that we faced in our shared projects. I was frequently impressed by Brittany’s initiative to proactively seek out solutions to problems that impeded the team’s progress but were not explicitly called out on our roadmap. I strongly recommend Brittany, as she is an efficient, inquisitive, and deeply knowledgeable software engineer."

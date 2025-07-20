@@ -1,0 +1,28 @@
+.contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 90%;
+  }
+  
+  .left {
+    grid-column: 1 / span 2; /* left half */
+    grid-row: 1;
+  }
+  
+  .right {
+    grid-column: 3 / span 2; /* right half */
+    grid-row: 1;
+  }
+  
+  .middle {
+    grid-column: 1 / -1; /* full width */
+    grid-row: 2;
+  }
+  
+  .center {
+    grid-column: 2 / span 2; /* center two columns */
+    grid-row: 3;
+    justify-self: center; /* centers inside the spanned area */
+  }
+  

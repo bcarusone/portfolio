@@ -1,26 +1,18 @@
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import styles from './Works.module.css';
 
-export default function WorksContent() {
-    return (
+export default function WorksContent({data}) {
+    return ( 
         <div className={styles.container}>
-            <div>
-                <p>RapidCap</p>
-            </div>
-            <div>
-                <p>Convert HTML</p>
-            </div>
-            <div>
-                <p>MyRF</p>
-            </div>
-            <div>
-                <p>Portfolio Site</p>
-            </div>
-            <div>
-                <p>Engineering Tool</p>
-            </div>
-            <div>
-                <p>Mobile App - coming soon!</p>
-            </div>
+            {data.map(project => (
+                <ProjectCard
+                    key={project.title}
+                    title={project.title}
+                    tagline={project.tagline}
+                    link={project.link}
+                    linkTitle={project.linkTitle}
+                />
+            ))}
         </div>
     );
 }
